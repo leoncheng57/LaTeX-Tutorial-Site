@@ -21,9 +21,9 @@
       <div id="header">
         <nav>
           <li class="fork"><a href="https://github.com/leoncheng57/LaTeX-Tutorial-Site">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/leoncheng57/LaTeX-Tutorial-Site/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/leoncheng57/LaTeX-Tutorial-Site/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
+          <!-- <li class="downloads"><a href="https://github.com/leoncheng57/LaTeX-Tutorial-Site/zipball/master">ZIP</a></li> -->
+          <!-- <li class="downloads"><a href="https://github.com/leoncheng57/LaTeX-Tutorial-Site/tarball/master">TAR</a></li> -->
+          <!-- <li class="title">DOWNLOADS</li> -->
         </nav>
       </div><!-- end header -->
 
@@ -31,7 +31,7 @@
 
       <section>
         <div id="title">
-          </img><h1>LaTeX Tutorial</h1>
+          <h1>LaTeX Tutorial</h1>
           <p></p>
           <hr>
           <span class="credits left">Project maintained by <a href="https://github.com/leoncheng57">leoncheng57</a></span>
@@ -41,18 +41,180 @@
 	<!--------------------------->
         <!-- BEGIN OUR CODE!!!!!   -->
         <!--------------------------->
-      <center>      
+      <center> 
+	<!-- BACKGROUND PRESENTATION -->
+	<h2>Background of LaTeX</h2>
+	<h3>a Presentation</h3>
 	<iframe src="https://docs.google.com/presentation/d/1S7d22SCJkq5L3tQUmM7oEPgmOXUycXV_AK7c97Qj9c8/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 	<br>
 	<br>
 	<br>
+	<hr>
+	<br>
+
+	<!-- VIDEO DEMO -->
+	<h2>VIDEO DEMO</h2>
+	<h3>:D!</h3>
+	<video width="600" height="400" controls>
+	  <source src="videos/demo.ogv" type="video/mp4">
+	    Your browser does not support the video tag.
+	</video>
+	<br>
+	<br>
+	<hr>	
+	
+	<!-- FULL DOCUMENT SAMPLE -->
+	<h2>Example Document</h2>
+	<h3>(See next section for step-by-step code walkthrough)</h3>
 	<br>
 	<table>
-	  <tr><td><img src="images/title.png" class="demo-imgs"></img></td></tr>
-	  <tr><td><img src="images/section1.png" class="demo-imgs"></img></td></tr>
-	  <tr><td><img src="images/section2.png" class="demo-imgs"></img></td></tr>
-	  <tr><td><img src="images/fullpage.png" class="demo-imgs"></img></td></tr>
+	  <tr>
+	    <th>Full Sample PDF</th>
+	    <th>Full Sample Code</th>
+	  </tr>
+	  <tr>
+	    <td>
+	      <img src="images/fullpage.png" class="demo-imgs"></img>
+	    </td>
+	    <td>
+	      <xmp>
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Snakes and Stuff}
+\author{Leon Cheng}
+\date{March 23, 2016}
+
+\begin{document}
+
+\maketitle
+
+%\tableofcontents
+
+%\newpage
+
+\section{Biography}
+
+\subsection{Portrait}
+
+\includegraphics[scale=0.3]{thluffy.png}
+
+\subsection{Caretakers}
+\textit{StuyCS community}
+
+\section{Some Math}
+
+\subsection{Random}
+$$ ax^2+bx+c=d $$
+
+$$ \frac{\sin \theta }{\cos \theta} $$
+
+\subsection{Fancier?}
+$$
+\begin{bmatrix}
+213 & 123 & 1321 \\
+123 & 123 & 2123 \\
+214 & 362 & 2130 \\
+\end{bmatrix}
+$$
+
+\end{document}
+	    </xmp>
+	    </td>
+	  </tr>
 	</table>
+	<hr>
+
+	<!-- CODE WALKTHROUGH	 -->
+	<h2>Code Walkthrough</h2>
+	<h3>Step-by-step</h3>
+	<table>
+	  <tr>
+	    <th>PDF Result</th>
+	    <th>LaTeX Code</th>
+	  </tr>
+	  <tr>
+	    <td>
+	      <img src="images/title.png" class="demo-imgs"></img>
+	    </td>
+	    <td>
+	      <xmp>
+\documentclass{article}
+% Note: '\usepackage' is like
+% Python's 'import' or C's 'include'
+\usepackage{amsmath} % for math symbols
+\usepackage{graphicx} % for pictures
+
+% Note: these commands for '\maketitle'
+% go before '\begin{document}'
+\title{Snakes and Stuff}
+\author{Leon Cheng}
+\date{March 23, 2016}
+		
+\begin{document} 
+
+\maketitle 
+	      </xmp>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td>
+	      <img src="images/section1.png" class="demo-imgs"></img>
+	    </td>
+	    <td>
+	      <xmp>
+\section{Biography}
+
+\subsection{Portrait}
+
+\includegraphics[scale=0.3]{thluffy.png}
+% must have thluffy.png 
+% in same local folder
+
+\subsection{Caretakers}
+\textit{StuyCS community}
+	      </xmp>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td>
+	      <img src="images/section2.png" class="demo-imgs"></img>
+	    </td>
+	    <td>
+	      <xmp>
+\section{Some Math}
+
+\subsection{Random}
+$$ ax^2+bx+c=d $$
+
+$$ \frac{\sin \theta }{\cos \theta} $$
+
+\subsection{Fancier?}
+$$
+\begin{bmatrix}
+213 & 123 & 1321 \\
+123 & 123 & 2123 \\
+214 & 362 & 2130 \\
+\end{bmatrix}
+$$
+
+\end{document}
+	      </xmp>
+	    </td>
+	  </tr>
+	</table>
+	<!-- MORE RESOURCES	 -->
+	<h2>More Resources</h2>
+	<h3>Coder's Galore</h3>
+	<a href="https://latex-project.org/intro.html"> An intro to LaTeX</a>
+	<br>
+	<a href="https://www.sharelatex.com/"> ShareLaTeX (an online LaTeX editor)</a>
+	<br>
+	<a href="https://www.sharelatex.com/learn/Creating_a_document_in_LaTeX">Some Great LaTeX Documentation</a>
+	<br>
+
       </center>
+      
   </body>
 </html>

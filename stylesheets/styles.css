@@ -5,6 +5,13 @@
     width: 300px;
 }
 
+table, th, td, tr{
+    border: 1px solid gray;
+}
+
+a {
+    font-size:150%;
+}
 /* BEGIN: GITHUB TEMPLATE CODE */
 
 @font-face {
