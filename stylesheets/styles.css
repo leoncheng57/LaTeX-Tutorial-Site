@@ -12,6 +12,12 @@ table, th, td, tr{
 a {
     font-size:150%;
 }
+
+#header nav li.pagelinks {
+  float: right;
+  margin-left: 6px;
+}
+
 /* BEGIN: GITHUB TEMPLATE CODE */
 
 @font-face {
@@ -865,3 +871,5 @@ section #title .credits.right {
     display: none;
   }
 }
+
+
